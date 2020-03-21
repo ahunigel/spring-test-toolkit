@@ -8,6 +8,8 @@ Provide an additional test toolkit library for spring framework.
     - `@ProfileValueSourceConfiguration(EnvironmentProfileValueSource.class)`, use environment as profile value source
     - `@ProfileValueSourceConfiguration(MergedSystemEnvAndPropertyProfileValueSource.class)`, use environment and system properties as profile value source
 - JUnit 4 `@RunTestOnWindowsOnly` annotation, restrict JUnit 4 tests running only on windows operation system
+- `SpringRunnerWithParametersFactory`
+    - JUnit 4 `@Parameterized` support for `SpringRunner`, support run spring test with parameters
 
 ## How to use
 
@@ -45,6 +47,11 @@ public class FooTest {}
 public class FooTest {}
 ```
 
+```java
+@RunWith(Parameterized.class)
+@Parameterized.UseParametersRunnerFactory(SpringRunnerWithParametersFactory.class)
+public class FooTest {}
+```
 ## References
 - [spring-toolkit](https://jitpack.io/#ahunigel/spring-toolkit)
 
