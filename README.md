@@ -54,8 +54,8 @@ public class FooTest {}
 ```
 ## References
 - [spring-test-toolkit](https://github.com/ahunigel/spring-test-toolkit)
-- [spring-toolkit](https://jitpack.io/#ahunigel/spring-toolkit)
 - [spring-security-oauth2-test](https://github.com/ahunigel/spring-security-oauth2-test)
+- [spring-toolkit](https://github.com/ahunigel/spring-toolkit)
 
 ## TODOs
 
