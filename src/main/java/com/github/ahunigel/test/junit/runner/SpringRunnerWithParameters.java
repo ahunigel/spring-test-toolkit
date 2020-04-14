@@ -1,4 +1,4 @@
-package com.github.ahunigel.test.runner;
+package com.github.ahunigel.test.junit.runner;
 
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.Parameterized;
