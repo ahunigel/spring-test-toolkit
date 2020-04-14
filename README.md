@@ -8,8 +8,16 @@ Provide an additional test toolkit library for spring framework.
     - `@ProfileValueSourceConfiguration(EnvironmentProfileValueSource.class)`, use environment as profile value source
     - `@ProfileValueSourceConfiguration(MergedSystemEnvAndPropertyProfileValueSource.class)`, use environment and system properties as profile value source
 - JUnit 4 `@RunTestOnWindowsOnly` annotation, restrict JUnit 4 tests running only on windows operation system
-- `SpringRunnerWithParametersFactory`
+- `SpringParametersRunnerFactory`
     - JUnit 4 `@Parameterized` support for `SpringRunner`, support run spring test with parameters
+- hamcrest additional matchers
+    - JsonPathMatcher.jsonPath(jsonPathExpression, matcher)
+    - JsonObjectMatcher.isJsonObject()
+    - JsonArrayMatcher.isJsonArray()
+- JUnit additional Assertions
+    - assertNotEmpty/assertBlank/assertNotBlank for `Collection`
+    - assertNotEmpty for `Map`
+    - assertNotEmpty/assertBlank/assertNotBlank for `String`
 
 ## How to use
 
@@ -49,7 +57,7 @@ public class FooTest {}
 
 ```java
 @RunWith(Parameterized.class)
-@Parameterized.UseParametersRunnerFactory(SpringRunnerWithParametersFactory.class)
+@Parameterized.UseParametersRunnerFactory(SpringParametersRunnerFactory.class)
 public class FooTest {}
 ```
 ## References

@@ -12,7 +12,7 @@ import org.springframework.test.util.JsonPathExpectationsHelper;
  *
  * @author nigel
  */
-public class JsonArrayMatcher<T> extends TypeSafeMatcher<T> {
+public class JsonArrayMatcher extends TypeSafeMatcher<String> {
   private final JsonPathExpectationsHelper jsonPathHelper;
 
   public JsonArrayMatcher(String expression) {
@@ -20,9 +20,8 @@ public class JsonArrayMatcher<T> extends TypeSafeMatcher<T> {
   }
 
   @Override
-  protected boolean matchesSafely(Object item) {
-    assert item instanceof String;
-    jsonPathHelper.assertValueIsArray((String) item);
+  protected boolean matchesSafely(String item) {
+    jsonPathHelper.assertValueIsArray(item);
     return true;
   }
 
@@ -32,13 +31,13 @@ public class JsonArrayMatcher<T> extends TypeSafeMatcher<T> {
   }
 
   @Factory
-  public static <T> Matcher<T> isJsonArray(String expression) {
-    return new JsonArrayMatcher<T>(expression);
+  public static Matcher<String> isJsonArray(String expression) {
+    return new JsonArrayMatcher(expression);
   }
 
   @Factory
-  public static <T> Matcher<T> isJsonArray() {
-    return new JsonArrayMatcher<T>("$");
+  public static Matcher<String> isJsonArray() {
+    return new JsonArrayMatcher("$");
   }
 
 }

@@ -9,7 +9,7 @@ import org.junit.runners.parameterized.TestWithParameters;
  * support run spring test with parameters
  * <pre>
  *   @RunWith(Parameterized.class)
- *   @Parameterized.UseParametersRunnerFactory(SpringRunnerWithParametersFactory.class)
+ *   @Parameterized.UseParametersRunnerFactory(SpringParametersRunnerFactory.class)
  *   public class FooTest {}
  * </pre>
  * Created by nigel on 2020/3/22.
