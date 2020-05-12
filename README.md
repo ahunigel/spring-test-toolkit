@@ -18,6 +18,11 @@ Provide an additional test toolkit library for spring framework.
     - assertNotEmpty/assertBlank/assertNotBlank for `Collection`
     - assertNotEmpty for `Map`
     - assertNotEmpty/assertBlank/assertNotBlank for `String`
+- sprint-test enhanced request matchers
+    - form()
+    - matchAll(ResultMatcher... matchers)
+    - allOf(ResultMatcher... matchers)
+    - anyOf(ResultMatcher... matchers)
 
 ## How to use
 
@@ -69,5 +74,5 @@ public class FooTest {}
 - [spring-toolkit](https://github.com/ahunigel/spring-toolkit)
 
 ## TODOs
-
-- none
+- hamcrest collection matcher
+    - hasItemsInOrder

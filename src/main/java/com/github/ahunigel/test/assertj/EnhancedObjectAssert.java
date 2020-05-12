@@ -18,9 +18,12 @@ import static org.assertj.core.internal.TypeComparators.defaultTypeComparators;
 import static org.assertj.core.util.Sets.newLinkedHashSet;
 
 /**
+ * Enhanced object assert for <code>Assertj</code>
  * Created by nigel on 2020/3/15.
  *
  * @author nigel
+ * @todo find a way to expose the class
+ * @see org.assertj.core.api.ObjectAssert
  */
 public abstract class EnhancedObjectAssert<SELF extends EnhancedObjectAssert<SELF, ACTUAL>, ACTUAL> extends AbstractAssert<SELF, ACTUAL> {
   public EnhancedObjectAssert(ACTUAL actual, Class<?> selfType) {

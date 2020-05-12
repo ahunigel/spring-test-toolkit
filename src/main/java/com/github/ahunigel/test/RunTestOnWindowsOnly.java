@@ -11,6 +11,7 @@ import java.lang.annotation.*;
  * Created by Nigel.Zheng on 2019/5/20.
  *
  * @author Nigel.Zheng
+ * @since 1.0
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

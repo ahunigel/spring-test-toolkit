@@ -18,6 +18,7 @@ import org.junit.runners.parameterized.TestWithParameters;
  * @author nigel
  * @see org.junit.runners.Parameterized
  * @see org.springframework.test.context.junit4.SpringRunner
+ * @since 1.2
  * @deprecated use {@link com.github.ahunigel.test.junit.runner.SpringParametersRunnerFactory} instead, should remove in next version
  */
 @Deprecated
