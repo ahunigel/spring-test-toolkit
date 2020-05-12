@@ -61,6 +61,9 @@ public class FooTest {}
 public class FooTest {}
 ```
 ## References
+- [Testing MVC Web Controllers with Spring Boot and @WebMvcTest](https://reflectoring.io/spring-boot-web-controller-test/)
+
+## See Also
 - [spring-test-toolkit](https://github.com/ahunigel/spring-test-toolkit)
 - [spring-security-oauth2-test](https://github.com/ahunigel/spring-security-oauth2-test)
 - [spring-toolkit](https://github.com/ahunigel/spring-toolkit)
