@@ -76,3 +76,5 @@ public class FooTest {}
 ## TODOs
 - hamcrest collection matcher
     - hasItemsInOrder
+- JsonPath JsonProvider
+    - NetMinidevJsonProvider
