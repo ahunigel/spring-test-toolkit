@@ -1,7 +1,6 @@
 package com.github.ahunigel.test.hamcrest;
 
 import org.hamcrest.Description;
-import org.hamcrest.Factory;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
 import org.hamcrest.core.IsNot;
@@ -12,8 +11,8 @@ import java.util.Map;
 
 import static org.hamcrest.CoreMatchers.anything;
 import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasEntry;
-import static org.junit.Assert.assertThat;
 
 
 /**
@@ -41,7 +40,6 @@ public class JsonPathMatcher extends TypeSafeMatcher<String> {
 
   }
 
-  @Factory
   public static Matcher jsonPath(String expression, Matcher matcher) {
     assertThat("JsonPathMatcher cycle invocation", matcher, IsNot.not(instanceOf(JsonPathMatcher.class)));
     return new JsonPathMatcher(expression, matcher);

@@ -1,7 +1,6 @@
 package com.github.ahunigel.test.hamcrest;
 
 import org.hamcrest.Description;
-import org.hamcrest.Factory;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
 import org.springframework.test.util.JsonPathExpectationsHelper;
@@ -30,12 +29,10 @@ public class JsonObjectMatcher extends TypeSafeMatcher<String> {
 
   }
 
-  @Factory
   public static Matcher<String> isJsonObject(String expression) {
     return new JsonObjectMatcher(expression);
   }
 
-  @Factory
   public static Matcher<String> isJsonObject() {
     return new JsonObjectMatcher("$");
   }
