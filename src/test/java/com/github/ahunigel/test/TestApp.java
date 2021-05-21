@@ -1,4 +1,4 @@
-package com.github.ahunigel.test.runner;
+package com.github.ahunigel.test;
 
 import lombok.SneakyThrows;
 import org.springframework.boot.SpringApplication;
