@@ -1,7 +1,7 @@
 plugins {
     id "io.spring.dependency-management" version "1.0.11.RELEASE"
     id "io.freefair.lombok" version "5.3.3.3"
-    id 'java'
+    id 'java-library'
 }
 
 ext {
@@ -28,8 +28,8 @@ dependencyManagement {
 }
 
 dependencies {
-    implementation "org.springframework.boot:spring-boot"
-    implementation "org.springframework:spring-web"
+    api "org.springframework.boot:spring-boot"
+    compile "org.springframework:spring-web"
     implementation "org.springframework.boot:spring-boot-starter-test"
     implementation group: 'junit', name: 'junit'
 
