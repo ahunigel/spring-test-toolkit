@@ -23,6 +23,7 @@ Provide an additional test toolkit library for spring framework.
     - matchAll(ResultMatcher... matchers)
     - allOf(ResultMatcher... matchers)
     - anyOf(ResultMatcher... matchers)
+- MockitoBaseTest
 
 ## How to use
 
