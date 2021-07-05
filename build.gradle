@@ -1,6 +1,7 @@
 plugins {
     id "io.freefair.lombok" version "5.3.3.3"
     id 'java-library'
+    id 'maven-publish'
 }
 
 ext {
@@ -8,7 +9,7 @@ ext {
 }
 
 group 'com.github.ahunigel'
-version '2.0-SNAPSHOT'
+version project.findProperty("version")
 
 sourceCompatibility = 1.8
 
@@ -19,7 +20,15 @@ repositories {
 dependencies {
     implementation platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
 
-    compile "org.springframework:spring-web"
+    api "org.springframework:spring-web"
     api "org.springframework.boot:spring-boot-starter-test"
     api group: 'junit', name: 'junit'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
 }
