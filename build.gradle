@@ -4,13 +4,6 @@ plugins {
     id 'maven-publish'
 }
 
-ext {
-    set('springBootVersion', "2.6.+")
-}
-
-group 'com.github.ahunigel'
-version project.findProperty("version")
-
 sourceCompatibility = 1.8
 
 repositories {
