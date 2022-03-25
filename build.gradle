@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    implementation platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
+    api platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
 
     api "org.springframework:spring-web"
     api "org.springframework.boot:spring-boot-starter-test"
