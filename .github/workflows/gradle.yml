@@ -18,4 +18,4 @@ permissions:
 
 jobs:
   build:
-    uses: ahunigel/reusable-workflows/.github/workflows/gradle.yml@main
+    uses: ahunigel/reusable-workflows/.github/workflows/gradle-jdk17.yml@main

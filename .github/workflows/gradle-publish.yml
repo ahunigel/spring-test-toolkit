@@ -13,4 +13,4 @@ on:
 
 jobs:
   build:
-    uses: ahunigel/reusable-workflows/.github/workflows/gradle-publish.yml@main
+    uses: ahunigel/reusable-workflows/.github/workflows/gradle-publish-jdk17.yml@main
