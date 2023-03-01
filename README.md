@@ -70,6 +70,7 @@ public class FooTest {}
 - [Testing MVC Web Controllers with Spring Boot and @WebMvcTest](https://reflectoring.io/spring-boot-web-controller-test/)
 
 ## See Also
+- [springkit-bom](https://github.com/ahunigel/springkit-bom)
 - [spring-test-toolkit](https://github.com/ahunigel/spring-test-toolkit)
 - [spring-security-oauth2-test](https://github.com/ahunigel/spring-security-oauth2-test)
 - [spring-toolkit](https://github.com/ahunigel/spring-toolkit)
