@@ -12,7 +12,7 @@ repositories {
 }
 
 ext {
-    springBootVersion = '3.0.6'
+    springBootVersion = '3.1.0'
 }
 
 dependencies {
