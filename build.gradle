@@ -42,6 +42,23 @@ publishing {
     publications {
         maven(MavenPublication) {
             from components.java
+            
+            pom {
+                name = project.name
+                description = 'spring test toolkit'
+                url = "https://github.com/ahunigel/${project.name}"
+                developers {
+                    developer {
+                        id = 'ahunigel'
+                        name = 'Nigel Zheng'
+                        email = 'ahunigel@gmail.com'
+                    }
+                }
+                scm {
+                    connection = "scm:git:git@github.com:ahunigel/${project.name}.git"
+                    url = "https://github.com/ahunigel/${project.name}"
+                }
+            }
         }
     }
 }
