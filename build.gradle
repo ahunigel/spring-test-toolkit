@@ -9,6 +9,7 @@ sourceCompatibility = 17
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 ext {
@@ -21,6 +22,7 @@ dependencies {
     api "org.springframework:spring-web"
     api "org.springframework.boot:spring-boot-starter-test"
     implementation group: 'junit', name: 'junit'
+    api "com.github.ahunigel:test-toolkit:1.0.0"
 
     testImplementation platform("org.spockframework:spock-bom:2.3-groovy-4.0")
     testImplementation 'org.spockframework:spock-core'
