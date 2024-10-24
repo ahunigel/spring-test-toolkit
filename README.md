@@ -14,16 +14,11 @@ Provide an additional test toolkit library for spring framework.
     - JsonPathMatcher.jsonPath(jsonPathExpression, matcher)
     - JsonObjectMatcher.isJsonObject()
     - JsonArrayMatcher.isJsonArray()
-- JUnit additional Assertions
-    - assertNotEmpty/assertBlank/assertNotBlank for `Collection`
-    - assertNotEmpty for `Map`
-    - assertNotEmpty/assertBlank/assertNotBlank for `String`
 - sprint-test enhanced request matchers
     - form()
     - matchAll(ResultMatcher... matchers)
     - allOf(ResultMatcher... matchers)
     - anyOf(ResultMatcher... matchers)
-- MockitoBaseTest
 
 ## How to use
 
@@ -71,6 +66,7 @@ public class FooTest {}
 
 ## See Also
 - [springkit-bom](https://github.com/ahunigel/springkit-bom)
+- [test-toolkit](https://github.com/ahunigel/test-toolkit)
 - [spring-test-toolkit](https://github.com/ahunigel/spring-test-toolkit)
 - [spring-security-oauth2-test](https://github.com/ahunigel/spring-security-oauth2-test)
 - [spring-toolkit](https://github.com/ahunigel/spring-toolkit)

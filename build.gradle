@@ -9,6 +9,7 @@ sourceCompatibility = 17
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 ext {
@@ -20,14 +21,20 @@ dependencies {
 
     api "org.springframework:spring-web"
     api "org.springframework.boot:spring-boot-starter-test"
-    implementation group: 'junit', name: 'junit'
+    implementation 'junit:junit'
+    api "com.github.ahunigel:test-toolkit:1.0.0"
 
     testImplementation platform("org.spockframework:spock-bom:2.3-groovy-4.0")
     testImplementation 'org.spockframework:spock-core'
     testImplementation 'net.bytebuddy:byte-buddy' // allows mocking of classes (in addition to interfaces)
     testImplementation "org.objenesis:objenesis:3.4"
-}
 
+    testRuntimeOnly "org.junit.vintage:junit-vintage-engine"
+}
+// Make all tests use JUnit 5
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+}
 publishing {
     repositories {
         maven {
