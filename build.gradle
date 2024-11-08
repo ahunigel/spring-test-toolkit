@@ -17,7 +17,7 @@ ext {
 }
 
 dependencies {
-    api platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
+    implementation platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
 
     api "org.springframework:spring-web"
     api "org.springframework.boot:spring-boot-starter-test"
