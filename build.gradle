@@ -5,8 +5,6 @@ plugins {
     id 'maven-publish'
 }
 
-sourceCompatibility = 17
-
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
